@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form >
+	<p>
+		姓名：
+		<input type="text" value="fk" />
+	</p>
+	<p>
+		性别：
+		<input type="radio" name="se" id="nan" /> 
+		<label for="nan">男</label>
+		<input type="radio" name="se"/> 女
+	</p>
+	<p>
+		爱好：
+		<input type="checkbox" name="qiu" id="zu" />
+		<label for="zu">足球</label>
+		<input type="checkbox" name="qiu" />男球
+		<input type="checkbox" name="qiu" />棒球
+	</p>
+	<p>
+		密码：
+		<input type="password" />
+	</p>
+	<p>
+		按钮：
+		<input type="button"value="普通按钮" > 
+		<input type="submit"value="提交按钮" > 
+		<input type="reset" value="重置按钮"> 
+	</p>
+	<p>
+		年龄：
+		<input type="date" /> 
+		颜色：
+		<input type="color" />
+		移动框
+		<input type="range" min="100" max="250" />
+	</p>
+	<p>
+		年份：
+		<select >
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+		</select>
+	</p>
+	<p>
+		年份2：
+		<select id="xiala">
+		</select>
+		<script type="text/javascript">
+			var xiala = document.getElementById("xiala");
+			for (var i = 1995; i <= 2016; i++) {
+				xiala.innerHTML += "<option>" + i + "</option>";
+			}
+		</script>
+	</p>
+	<p>
+		意见：
+		<textarea cols="30" rows="10">这里面放默认文字</textarea>
+	</p>
+	</form>
+</body>
+</html>
