@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+			font-size: 14px;
+			font-family: "Arial","Microsoft Yahei","SimSun";
+		}
+        .inner_c{
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .header{
+            width: 100%;
+            height: 58px;
+            background-color: #191D3A;
+        }
+        .header .logo{
+            width: 158px;
+            height: 37px;
+            padding: 10px 47px 0px 20px;
+            float: left;
+        }
+        .header .logo h1{  
+            background: url(images/logo.png) no-repeat;
+            text-indent: -999em;
+        }
+        .header .nav{
+            float: left;
+        }
+        .header .nav ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        .header .nav ul li{
+            float: left;
+            width: 85px;
+            height: 58px;
+ 			line-height: 58px;
+            text-align: center;
+            border-right: 1px solid  #252947;
+        }
+        .header .nav .first{
+            border-left: 1px solid  #252947;
+        }
+        .header .nav .current a{
+            color:#FFF;
+        }
+        .header .nav ul li a{
+            display: block;
+            text-decoration: none;
+            color:#818496;
+        }
+        .header .nav ul li a:hover{
+            text-decoration: underline;
+            color:#FFF;
+            background-color: skyblue;
+        }
+        .header .joinus{
+            float: left;
+            padding: 12px 0 0 52px;
+        }
+        .header .joinus a{
+            display: block;
+            text-align: center;
+            width: 98px;
+ 			line-height: 32px;
+            text-decoration: none;
+            background-color: #38B774;
+            border: 1px solid #3ACA7A;
+            border-radius: 3px;
+        }
+        .header .joinus a:hover{
+            background-color: rgb(141, 187, 162);
+            color: #FFF;
+        }
+        .banner{
+            width: 100%;
+        }
+        .banner .img{
+            height: 567px;
+            background: url(images/banner1.jpg) no-repeat center top #5EC4EA;
+        }
+        .product{
+            padding-top: 50px;
+ 			height: 229px;
+ 			border-bottom: 1px solid #DBE1E7;  
+        }
+        .product ul{
+            list-style: none;
+            float: left;
+        }
+        .product ul li{
+            float: left;
+            width: 218px;
+            margin-right: 43px; 
+        }
+        .product ul li.last{
+            width: 217px;
+            margin-right: 0; 
+        }
+        .product ul li span{
+            display: block;
+        }
+        .product ul li span.chinese{
+ 			line-height: 40px;
+ 			color:#444866;
+ 			font-weight: bold;
+ 		}
+ 		.product ul li span.english{
+ 			font-size: 12px;
+ 			line-height: 12px;
+ 			color:#38B774;
+ 		}
+        .product ul li span.english b{
+            font-weight: normal;
+            padding-right: 11px;
+            background: url(images/arrow.png) no-repeat right center;
+        }
+        .product ul li a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding-bottom: 12px;
+        }
+        .product ul li a:hover .chinese{
+            color: white;
+        }
+        .product ul li a:hover .english{
+            color: white;
+        }
+        .product ul li a:hover .english b{
+            background: url(images/arrow2.png) no-repeat right center;
+        }
+        .product ul li a:hover{
+            background-color: yellowgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_c">
+            <div class="logo">
+                <h1><a href="">博雅互动</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="first current"><a href="">首页</a></li>
+					<li><a href="">博雅游戏</a></li>
+					<li><a href="">博雅新闻</a></li>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">客服中心</a></li>
+					<li><a href="">投资者关系</a></li>
+					<li><a href="">校园大使</a></li>
+                </ul>
+            </div>
+            <div class="joinus">
+                <a href="">
+                    <span>加入我们</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="img"></div>
+    </div>
+    <!-- 产品 -->
+    <div class="product inner_c">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="images/pro1.png" alt="">
+                    <span class="chinese">四川麻将</span>
+                    <span class="english">SICHUAN MAHJONG<b></b></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/pro2.png" alt="">
+                    <span class="chinese">四川扑克</span>
+                    <span class="english">SICHUAN PUKE<b></b></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/pro3.png" alt="">
+                    <span class="chinese">双人麻将</span>
+                    <span class="english">SHUANGREN MAHJONG<b></b></span>
+                </a>
+            </li>
+            <li class="last">
+                <a href="">
+                    <img src="images/pro4.png" alt="">
+                    <span class="chinese">合金弹头</span>
+                    <span class="english">HEJIN DANTOU<b></b></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 产品end -->
+</body>
+</html>
