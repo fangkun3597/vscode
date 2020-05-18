@@ -64,6 +64,40 @@
             top: 20px;
             right: 10px;
         }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+            position: absolute;
+            top: 600px;
+            left: 600px;
+            z-index: 2;
+        }
+        .box2_1{
+            width: 20px;
+            height: 20px;
+            background-color: tan;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 9999;
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            background-color: lawngreen;
+            position: absolute;
+            top: 500px;
+            left: 500px;
+            z-index: 1;
+        }
+        .box3_1{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(75, 173, 72);
+            position: absolute;
+            left: 50px;
+        }
     </style>
 </head>
 <body>
@@ -82,14 +116,17 @@
 
         </div>
     </div>
-    <!-- <div class="boder">
-        <ul>
-            <li><a href="#">网站栏目</a></li>
-            <li><a href="#">网站栏目</a></li>
-            <li><a href="#">网站栏目</a></li>
-            <li><a href="#">网站栏目</a></li>
-            <li><a href="#">网站栏目</a></li>
-        </ul>
-    </div> -->
+    <div class="box2">
+        <span>box2</span>
+        <div class="box2_1">
+            <span>box2_1</span>
+        </div>
+    </div>
+    <div class="box3">
+        <span>box3</span>
+        <div class="box3_1">
+        <span> box3_1</span>
+        </div>
+    </div>
 </body>
 </html>
