@@ -11,6 +11,8 @@
         }
         body{
             height: 5555px;
+            /* font-size: 14px;
+            font-family: Arial, "Microsoft Yahei","SimSun"; */
         }
         .header{
             width: 1000px;
@@ -68,7 +70,7 @@
             width: 50px;
             height: 50px;
             background-color: skyblue;
-            position: absolute;
+            position: relative;
             top: 600px;
             left: 600px;
             z-index: 2;
@@ -86,7 +88,7 @@
             width: 50px;
             height: 50px;
             background-color: lawngreen;
-            position: absolute;
+            position: relative;
             top: 500px;
             left: 500px;
             z-index: 1;
@@ -98,6 +100,37 @@
             position: absolute;
             left: 50px;
         }
+        .cs{
+             /* height: 77px;  */
+            /* overflow: hidden; */
+            width: 500px;
+            background-color: red;
+        }
+        .cs ul{
+            list-style: none;
+        }
+        .cs ul li{
+            float: left;
+            margin-right: 20px;
+        }
+        .cs ul li a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        /* .cs ul li a img{
+            display: block;
+        } */
+        /* .cs ul li span{
+            display: block;
+        } */
+        .cs ul li a span{
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: none;
+        } 
     </style>
 </head>
 <body>
@@ -127,6 +160,28 @@
         <div class="box3_1">
         <span> box3_1</span>
         </div>
+    </div>
+    <div class="cs">
+        <ul>
+            <li>
+                <a href="">
+                <img src="images/logo.png" alt="">
+                <span>这叫什么事儿啊</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <img src="images/logo.png" alt="">
+                <span>这叫什么事儿啊</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="txt">
+        <span>毫无价值</span>
+    </div>
+    <div class="herf">
+        <a href="#">Send</a>
     </div>
 </body>
 </html>

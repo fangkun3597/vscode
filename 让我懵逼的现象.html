@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 版本问题导致在插入图片时的  不同现象，暂时看来html5 在插入图片时会多出一些像素  html就没有这种现象 -->
+    <style type="text/css">
+    	*{
+			margin: 0;
+			padding: 0;
+		}
+		/*公共类，原子类*/
+		.inner_c{
+			width: 1000px;
+			margin: 0 auto;
+		}
+     	.product{
+ 			padding-top: 50px;
+ 			height: 229px;
+ 			border-bottom: 1px solid #DBE1E7;
+ 			position: relative;
+ 		}
+ 		.product ul{
+ 			list-style: none;
+ 		}
+ 		.product ul li{
+ 			float: left;
+ 			width: 218px;
+ 			margin-right: 43px;
+ 		}
+ 		.product ul li.last{
+ 			width: 217px;
+ 			overflow: hidden;
+ 		}
+ 		.product ul li a{
+			text-decoration: none;
+			display: block;
+			padding-bottom: 12px;
+ 		}
+ 		.product ul li a:hover{
+ 			background-color: #38B774;
+ 		}
+ 		.product ul li span{
+ 			/*转成块之后，就能用text-align:center;来居中内部文字了*/
+			display: block;
+			text-align: center;
+ 		}
+ 		.product ul li span.chinese{
+ 			line-height: 40px;
+ 			color:#444866;
+ 			font-weight: bold;
+ 		}
+ 		.product ul li span.english{
+ 			font-size: 12px;
+ 			line-height: 12px;
+ 			color:#38B774;
+ 		}
+ 		.product ul li a:hover span.chinese{
+ 			color:white;
+ 		}
+ 		.product ul li a:hover span.english{
+ 			color:white;
+ 		}
+ 		.product ul li span.english b{
+ 			font-weight: normal;
+ 			padding-right: 11px;
+ 			background: url(images/arrow.png) no-repeat right center;
+ 		}
+ 		.product ul li a:hover span.english b{
+ 			background-image: url(images/arrow2.png);
+ 		}
+    </style>
+</head>
+<body>
+    	<!-- 产品 -->
+	<div class="product inner_c">
+		<ul>
+			<li>
+				<a href="">
+					<img src="images/pro1.png" alt="" />
+					<span class="chinese">四川麻将</span>
+					<span class="english">
+						<b>
+							SICHUAN MAHJONG
+						</b>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/pro2.png" alt="" />
+					<span class="chinese">四川麻将</span>
+					<span class="english">
+						<b>SICHUAN</b>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/pro3.png" alt="" />
+					<span class="chinese">四川麻将</span>
+					<span class="english">
+						<b>SICHUAN MAHJONG</b>
+					</span>
+				</a>
+			</li>
+			<li class="last nomargin">
+				<a href="">
+					<img src="images/pro4.png" alt="" />
+					<span class="chinese">四川麻将</span>
+					<span class="english">
+						<b>SICHUAN MAHJONG</b>
+					</span>
+				</a>
+			</li>
+		</ul>
+		<div class="circles">
+			<ol>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li class="nomargin"></li>
+			</ol>
+		</div>
+			
+	</div>
+</body>
+</html>
